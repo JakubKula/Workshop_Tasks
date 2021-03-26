@@ -62,23 +62,14 @@ public class Workshop_toDoList {
         newTable[newTable.length - 1][1] = dueDate;
         newTable[newTable.length - 1][2] = importanceOfTask;
         String number = String.valueOf(newTable.length - 1);
-//        try(FileWriter fileWriter = new FileWriter(nameOfFile, true)){
-//            fileWriter.append(number, descriptionOfTask, dueDate, importanceOfTask);
+        System.out.println(number);
+//        try{
+//            Files.write();
 //        } catch (IOException e) {
 //            System.out.println("Coudnt save to file " + e.getMessage());
 //        }
     }
     public static void listingTasksFromFile (String [][] tab){
-        for (int i = 0; i < tab.length; i++) {
-            System.out.print(i + " : ");
-            for (int j = 0; j < 3; j++) {
-                String lineToPrint = new String(tab[i][j]);
-                System.out.print(lineToPrint);
-            }
-            System.out.println();
-        }
-    }
-    public static void listingTsasksFromFile (String [][] tab){
         for (int i = 0; i < tab.length; i++) {
             System.out.print(i + " : ");
             for (int j = 0; j < 3; j++) {
